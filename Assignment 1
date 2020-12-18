@@ -98,24 +98,31 @@ Convert all the values of 1st array to 64
 In [arr3d[0,0] = 64]:
 
 Make a 2-Dimensional array with values 0-9 and slice out the first 1st 1-D array from it
-In []:
+In [x = np.array([[1, 2, 3], [4, 5, 6]])
+print(x[0])]:
 
 Make a 2-Dimensional array with values 0-9 and slice out the 2nd value from 2nd 1-D array from it
-In []:
+In [x = np.array([[1, 2, 3], [4, 5, 6]])
+print(x[1,1])]:
 
 Make a 2-Dimensional array with values 0-9 and slice out the third column but only the first two rows
 In []:
 
 Create a 10x10 array with random values and find the minimum and maximum values
-In []:
+In [x = np.random.random((10,10))
+print("Original Array:")
+print(x) 
+xmin, xmax = x.min(), x.max()
+print("Minimum and Maximum Values:")
+print(xmin, xmax)]:
 
 27. a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8])
 Find the common items between a and b
-In []:
+In [np.intersect(a,b)]:
 
 a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8])
 Find the positions where elements of a and b match
-In []:
+In [np.where(a== b)]:
 
 names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe']) data = np.random.randn(7, 4)
 Find all the values from array data where the values from array names are not equal to Will
