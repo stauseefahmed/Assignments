@@ -1,0 +1,126 @@
+
+Import the numpy package under the name np
+In [import numpy as np]:
+
+Create a null vector of size 10
+In [x = np.zeros(10)]:
+
+Create a vector with values ranging from 10 to 49
+In [np.arange(10,49)]:
+
+Find the shape of previous array in question 3
+In [print(arr1.shape)]:
+
+Print the type of the previous array in question 3
+In [print(type(arr1))]:
+
+Print the numpy version and the configuration
+In [print(np._version_)
+print(np.show_config())]:
+
+Print the dimension of the array in question 3
+In [print(arr1.shape)]:
+
+Create a boolean array with all the True values
+In [arr1 = np.ones((2), dtype=bool)]:
+
+Create a two dimensional array
+In [x = np.array([[1, 2, 3], [4, 5, 6]]]:
+
+Create a three dimensional array
+In [np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])]:
+
+Reverse a vector (first element becomes last)
+In [reversed_arr = arr[::-1]]:
+
+Create a null vector of size 10 but the fifth value which is 1
+In [x = np.zeros(10)
+print(x)
+print("Update fifth value to 1")
+x[4] = 1
+print(x)]:
+
+Create a 3x3 identity matrix
+In [array_2D=np.identity(3)
+print('3x3 matrix:')
+print(array_2D)]:
+
+arr = np.array([1, 2, 3, 4, 5])
+Convert the data type of the given array from int to float
+In [arr = arr.astype('float64')]:
+
+arr1 = np.array([[1., 2., 3.],
+
+            [4., 5., 6.]])  
+
+arr2 = np.array([[0., 4., 1.],
+
+           [7., 2., 12.]])
+Multiply arr1 with arr2
+In [np.multiply(arr1, arr2)]:
+
+arr1 = np.array([[1., 2., 3.],
+
+            [4., 5., 6.]]) 
+
+arr2 = np.array([[0., 4., 1.],
+
+            [7., 2., 12.]])
+Make an array by comparing both the arrays provided above
+In [arr = np.concatenate((arr1, arr2))]:
+
+Extract all odd numbers from arr with values(0-9)
+In [a = np.array([1,2,3,4,5,6,6,7,7,8,9])
+a[a % 2 == 1]]:
+
+Replace all odd numbers to -1 from previous array
+In [a[np.where(a%2 == 1)] =-1]:
+
+arr = np.arange(10)
+Replace the values of indexes 5,6,7 and 8 to 12
+In [a[5:9] = 12]:
+
+Create a 2d array with 1 on the border and 0 inside
+In [x = np.ones((5,5))
+x[1:-1,1:-1] = 0
+print(x)]:
+
+arr2d = np.array([[1, 2, 3],
+
+            [4, 5, 6], 
+
+            [7, 8, 9]])
+Replace the value 5 to 12
+In [arr2d[1,1] = 12]:
+
+arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+Convert all the values of 1st array to 64
+In [arr3d[0,0] = 64]:
+
+Make a 2-Dimensional array with values 0-9 and slice out the first 1st 1-D array from it
+In []:
+
+Make a 2-Dimensional array with values 0-9 and slice out the 2nd value from 2nd 1-D array from it
+In []:
+
+Make a 2-Dimensional array with values 0-9 and slice out the third column but only the first two rows
+In []:
+
+Create a 10x10 array with random values and find the minimum and maximum values
+In []:
+
+27. a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8])
+Find the common items between a and b
+In []:
+
+a = np.array([1,2,3,2,3,4,3,4,5,6]) b = np.array([7,2,10,2,7,4,9,4,9,8])
+Find the positions where elements of a and b match
+In []:
+
+names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe']) data = np.random.randn(7, 4)
+Find all the values from array data where the values from array names are not equal to Will
+In []:
+
+names = np.array(['Bob', 'Joe', 'Will', 'Bob', 'Will', 'Joe', 'Joe']) data = np.random.randn(7, 4)
+Find all the values from array data where the values from array names are not equal to Will and Joe
+In []:
